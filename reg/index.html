@@ -8,45 +8,101 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="reg.css">
     <script defer src="reg.js"></script>
     <title>Sites name</title>
 </head>
 
 <body>
-    <h3>Registracija</h3>
-    <div class="panel-group">
-        <div id="registracija" class="panel panel-primary">
-            <div class="panel-heading">Prasome atidziai perskaityti ! SVARBU !</div>
-            <div class="panel-body">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, ipsam possimus nulla perferendis quasi eveniet autem, deserunt magni fugiat dolorem ea quia perspiciatis voluptate enim blanditiis neque. Sapiente, incidunt qui?
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia explicabo consequuntur molestias, ab nam provident saepe earum eveniet voluptatum, labore iste ducimus officia, voluptatibus corrupti at id porro officiis suscipit.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium aliquam molestiae dicta dolor eius pariatur consectetur iure doloribus ipsum, sed laborum hic et maxime odio nemo nisi, ad sit quam?
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae eaque eligendi debitis. Fugiat sit eligendi tempora porro architecto inventore molestias quos quisquam esse sunt impedit voluptate doloremque, ipsam, velit maiores.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est saepe numquam perferendis maxime velit incidunt nam quasi quisquam ad itaque esse corrupti tenetur aliquam delectus beatae, facilis inventore autem magni.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam repellat in odit quod architecto voluptates sed sit fugit perspiciatis odio aliquid labore debitis quia, molestias fuga harum. Laboriosam, dolor consequuntur.
+    <div class="visas-puslapis">
+    <!-- Virsutinis navigation bar'as -->
+        <nav class="navbar navbar-inverse sticky-top">
+            <a class="navbar-brand">Naviguoki --></a>
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <button type="button" 
+                        class="navbar-toggle" 
+                        data-toggle="collapse" 
+                        data-target="#topNavbar"
+                    >
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                </div>
+                <div class="collapse navbar-collapse" id="topNavbar">
+                    <!-- Kairysis navigation bar'as -->
+                    <ul class="nav navbar-nav">
+                        <li><a href="../index.html">Pagrindinis</a></li>
+                        <li><a href="kontaktai.html">Kontaktai</a></li>
+                        <li><a href="filmu-pasirinkimas.html">Filmu pasirinkimas</a></li>
+                        <li><a href="apie-mus.html">Apie mus</a></li>
+                    </ul>
+                    <!-- Desinysis navigation bar'as -->              
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="vip.html"> VIP</a></li>
+                        <li><a href="reg/index.html"><span class="glyphicon glyphicon-user"></span></a></li>
+                        <li><a href="prisijungimas.html"><span class="glyphicon glyphicon-log-in"></span></a></li>
+                        
+                    </ul>            
+                </div>    
+            </div>
+        </nav>
+    <!-- viduriukas -->
+        <div class="flex-container">
+            <h3>Registracija</h3>
+            <div class="panel-group">
+                <div id="registracija" class="panel panel-primary">
+                    <div class="panel-heading">Prasome atidziai perskaityti ! SVARBU !</div>
+                    <div class="panel-body">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, ipsam possimus nulla perferendis quasi eveniet autem, deserunt magni fugiat dolorem ea quia perspiciatis voluptate enim blanditiis neque. Sapiente, incidunt qui?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia explicabo consequuntur molestias, ab nam provident saepe earum eveniet voluptatum, labore iste ducimus officia, voluptatibus corrupti at id porro officiis suscipit.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium aliquam molestiae dicta dolor eius pariatur consectetur iure doloribus ipsum, sed laborum hic et maxime odio nemo nisi, ad sit quam?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae eaque eligendi debitis. Fugiat sit eligendi tempora porro architecto inventore molestias quos quisquam esse sunt impedit voluptate doloremque, ipsam, velit maiores.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est saepe numquam perferendis maxime velit incidunt nam quasi quisquam ad itaque esse corrupti tenetur aliquam delectus beatae, facilis inventore autem magni.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam repellat in odit quod architecto voluptates sed sit fugit perspiciatis odio aliquid labore debitis quia, molestias fuga harum. Laboriosam, dolor consequuntur.
+                    </div>
+                </div>
+            </div>
+            <form name="reg-forma" id="reg-forma" method="POST" action="">
+                <label for="megstamiausia-spalva">Megstamiausia spalva:</label>
+                <input type="color" name="megstamiausia-spalva" id="megstamiausia-spalva">
+
+                <label for="vardas">Jusu vardas:</label>
+                <input type="text" name="vardas" id="vardas">
+
+                <label for="pavarde">Jusu pavarde:</label>
+                <input type="text" name="pavarde" id="pavarde">
+
+                <label for="emailas">Jusu elektroninis pastas:</label>
+                <input type="email" name="emailas" id="emailas" value="pavizdys@pavizdys.lt">
+
+                <label for="gimdata">Jusu gimimo data:</label>
+                <input type="date" name="gimdata" id="gimdata">
+
+                <input type="submit">
+            </form>
+        </div>
+    <!-- Footer -->
+        <div class="footeris">
+            <div class="kaire">
+                Svetaines autorius:
+                <br>
+                Simonas Vytas
+            </div>
+            <div class="desine">
+                <a href="https://www.freepik.com/vectors/background">Background vector created by
+                <br> 
+                starline - www.freepik.com
+                </a>
+            </div>
+            <div class="centras">
+            <div>Filmoteka</div>
+            <div>2021</div>
             </div>
         </div>
     </div>
-    <form name="reg-forma" id="reg-forma" method="POST" action="">
-        <label for="megstamiausia-spalva">Megstamiausia spalva:</label>
-        <input type="color" name="megstamiausia-spalva" id="megstamiausia-spalva">
-
-        <label for="vardas">Jusu vardas:</label>
-        <input type="text" name="vardas" id="vardas">
-
-        <label for="pavarde">Jusu pavarde:</label>
-        <input type="text" name="pavarde" id="pavarde">
-
-        <label for="emailas">Jusu elektroninis pastas:</label>
-        <input type="email" name="emailas" id="emailas" value="pavizdys@pavizdys.lt">
-
-        <label for="gimdata">Jusu gimimo data:</label>
-        <input type="date" name="gimdata" id="gimdata">
-
-        <input type="submit">
-    </form>
-    
 
 </body>
 
