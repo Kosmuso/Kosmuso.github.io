@@ -1,0 +1,159 @@
+/*-- Viso puslapio --*/
+.inline {
+    display: inline-block;
+}
+
+body {
+    background-color: rgb(206, 204, 204);
+}
+
+/*-- Virsutine dalis --*/
+
+div.virsutinis-paveiksliukas img {
+    display:block;
+    width: 100%;
+    height: 250px;    
+}
+
+.navbar-toggle {
+    float: left;
+    margin-left: 15px;
+}
+
+.navbar {
+    border-radius: 0px;
+    border-color: grey;
+    /*box-shadow: 10px 10px 5px grey;*/
+    font-size: 16px;
+    font-family: monospace; 
+}
+
+.navbar-right li {
+    display: inline-block;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    background-color: #0b1a1b;
+    color: #00998d;
+}
+
+/*--  Vidurine dalis --*/
+.vidurine-dalis {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/*--  Kairioji vidurio dalis --*/
+.kairys-šoninis-meniu-div {
+    width: 30%;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    margin-top: 15px;
+}
+
+.kairys-šoninis-meniu-div ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    text-align: center;
+    background-color: #222222;
+    text-decoration: none;
+}
+ 
+.kairys-šoninis-meniu-div ul li {
+    border: 1px solid #9d9d9d;
+    border-bottom: 0px;
+    padding: 0px;
+    color: #9d9d9d;
+    font-family: monospace; 
+}
+
+.kairys-šoninis-meniu-div ul li:hover {
+    background-color: #0b1a1b;
+    color: #00998d;
+}
+
+.paskutinis-kairiojo-saraso-irasas-remeliai {
+    border-bottom: 2px solid #9d9d9d!important;
+}
+
+/*--  Vidurine (paneles) vidurio dalis --*/
+.turinio-vidurinis-div {
+    width: 55%;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 15px;
+    font-family: monospace; 
+}
+
+.panel-primary > .panel-heading {
+    background-color: #274952;
+}
+
+/*--  Desinioji (reklamine) vidurio dalis --*/
+.dešinys-reklamu-div {
+    width: 15%;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.dešinys-reklamu-div img {
+    height: 100vh;
+    width: 100%;
+}
+
+/*--  Footer'is --*/
+/*
+.row {
+    background-color: rgb(17, 16, 16);
+    size: 100vh;
+}
+
+.row div {
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    size: 100vh;
+}
+
+.row p:hover {
+    color:#00998d;
+    cursor: pointer; 
+}
+
+.footer div .kairys {
+    text-align: left;
+
+}
+.footer div .vidurys {
+    text-align: center;
+}
+
+.footer div .desinys {
+    text-align: right;
+}
+
+.footer > .container-fluid {
+    padding-right: 0px;
+}
+*/
+.footeris {
+    background-color: #222;
+    color: grey;
+    padding: 15px;
+}
+
+.centras {
+    text-align: center;
+}
+
+.desine {
+    float: right;
+}
+
+.kaire {
+    float: left;
+}
