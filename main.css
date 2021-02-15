@@ -179,6 +179,7 @@ div.virsutinis-paveiksliukas img {
     background-color: #222;
     color: grey;
     padding: 15px;
+    font-family: monospace;
 }
 
 .centras {
