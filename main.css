@@ -8,7 +8,6 @@ body {
 }
 
 /*-- Virsutine dalis --*/
-
 div.virsutinis-paveiksliukas img {
     display:block;
     width: 100%;
@@ -38,6 +37,22 @@ div.virsutinis-paveiksliukas img {
 }
 
 /*--  Vidurine dalis --*/
+@media only screen and (max-width: 768px) {
+    .vidurine-dalis .turinio-vidurinis-div {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .vidurine-dalis .kairys-šoninis-meniu-div {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .vidurine-dalis .dešinys-reklamu-div {
+        display: none;
+    }
+}
+
 .vidurine-dalis {
     display: flex;
     justify-content: space-between;
