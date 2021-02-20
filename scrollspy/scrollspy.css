@@ -197,6 +197,7 @@ body {
 .paslauga-img img {
     width: 300px;
     height: 175px;
+    cursor: pointer;
 }
 
 .paslauga-header {
