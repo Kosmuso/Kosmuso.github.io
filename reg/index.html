@@ -51,8 +51,7 @@
         </nav>
 <!-- viduriukas -->
         <div class="flex-container">
-            <h3>Registracija</h3>
-
+            <h3 id="pagr-antraste">Registracija</h3>
             <p>Tesdamas regisrtacija sutinku jog susipazinau ir sutinku su zemiau "Taisykles" </p>
             <div class="panel-group">
                 <div class="panel panel-default">
@@ -88,13 +87,18 @@
             <input type="text" name="pavarde" id="pavarde">
 
             <label for="emailas">Jusu elektroninis pastas:</label>
-            <input type="email" name="emailas" id="emailas" value="pavizdys@pavizdys.lt">
+            <input type="email" name="emailas" id="emailas" value="pavizdys@pavizdys.lt" >
 
             <label for="gimdata">Jusu gimimo data:</label>
             <input type="date" name="gimdata" id="gimdata">
 
             <input type="submit">
         </form>
+
+        <button onclick="paspaudusTest()" id="testbtn">
+            Spausti cia - isvesti i console.
+        </button>
+
         </div>
         <div class="tuscias"></div>
 <!-- Footer -->

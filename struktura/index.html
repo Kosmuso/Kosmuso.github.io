@@ -8,72 +8,153 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="structure.css">
     <script defer src="main.js"></script>
-    <title>Sites name</title>
+    <title>Sites stucture</title>
 </head>
 
-<body> 
+<body data-spy="scroll" data-target=".navbar" data-offset="350"> 
+    <!-- Virsutinis navigation bar'as -->
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <a class="navbar-brand">Naviguoki --></a>
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" 
+                    class="navbar-toggle" 
+                    data-toggle="collapse" 
+                    data-target="#topNavbar"
+                >
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            </div>
+            <div class="collapse navbar-collapse" id="topNavbar">
+                <!-- Kairysis navigation bar'as -->
+                <ul class="nav navbar-nav">
+                    <li><a href="../index.html">Pagrindinis</a></li>
+                    <li><a href="index.html">Stukturos pvz.</a></li>
+                    <li><a href="../scrollspy/index.html">Scrollspy pvz.</a></li>
+                    <li><a href="#">Apie mus</a></li>
+                    <!--<li class="bruksniukas"><a>| Strukturos tipai: </a></li>
+                    <li class="skaicius"><a href="#"> 1 </a></li>
+                    <li class="skaicius"><a href="#"> 2 </a></li>
+                    <li class="skaicius"><a href="#"> 3 </a></li>
+                    <li class="skaicius"><a href="#"> 4 </a></li>
+                    <li class="skaicius"><a href="#"> 5 </a></li>-->
+                </ul>
+                <!-- Desinysis navigation bar'as -->              
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="vip.html"> VIP</a></li>
+                    <li><a href="reg/index.html"><span class="glyphicon glyphicon-user"></span></a></li>
+                    <li><a href="prisijungimas.html"><span class="glyphicon glyphicon-log-in"></span></a></li>                    
+                </ul>
+                <!-- Centrinis navigation bar'as -->
+                <div class="centrinis">
+                    <ul class="nav navbar-nav justify-content-center">
+                        <li class="bruksniukas"><a>| Strukturos tipai: </a></li>
+                        <li class="skaicius"><a href="#pirmas"> 1 </a></li>
+                        <li class="skaicius"><a href="#antras"> 2 </a></li>
+                        <li class="skaicius"><a href="#trecias"> 3 </a></li>
+                        <li class="skaicius"><a href="#ketvirtas"> 4 </a></li>
+                        <li class="skaicius"><a href="#penktas"> 5 </a></li>                   
+                    </ul> 
+                </div>                 
+
+            </div>    
+        </div>
+    </nav>
     <!-- Pirmas -->
-    <div class="grid-container">
-        <div>1</div>
-        <div>2</div>
-    </div>
+    <div class="section pirmas-konteineris" id="pirmas">
+        <div>
+            <div class="grid-container" id="pirmas">
+                <div>1</div>
+                <div>2</div>
+            </div>
+        </div>
+    </div>  
 
     <!-- Antras -->
-    <div class="grid-container2">
-        <div class="grid-item item1">1</div>
-        <div class="grid-item item2">2</div>
-        <div class="grid-item item3">3</div>        
+    <div class="section" id="antras">
+        <div class="grid-container2">
+            <div class="grid-item item1">1</div>
+            <div class="grid-item item2">2</div>
+            <div class="grid-item item3">3</div>        
+        </div>
     </div>
 
     <!-- Trecias -->
-    <div class="grid-container3">
-        <div class="grid-itemas itemas1">1</div>
-        <div class="grid-itemas itemas2">2</div>
-        <div class="grid-itemas itemas3">3</div>  
-        <div class="grid-itemas itemas4">4</div>
-        <div class="grid-itemas itemas5">5</div>
-    </div>
+    <div class="section" id="trecias">
+        <div class="grid-container3">
+            <div class="grid-itemas itemas1">1</div>
+            <div class="grid-itemas itemas2">2</div>
+            <div class="grid-itemas itemas3">3</div>  
+            <div class="grid-itemas itemas4">4</div>
+            <div class="grid-itemas itemas5">5</div>
+        </div>
+    </div>    
 
     <!-- Ketvirtas -->
-    <div class="grid-container4b inner-padding">
-        <div>
-            <div class="grid-container4">
-                <div class="grid-itemm itemm1">1</div>
-                <div class="grid-itemm itemm2">2</div>
-                <div class="grid-itemm itemm3">3</div>  
+    <div class="section" id="ketvirtas"></div>
+        <div class="grid-container4b inner-padding">
+            <div>
+                <div class="grid-container4">
+                    <div class="grid-itemm itemm1">1</div>
+                    <div class="grid-itemm itemm2">2</div>
+                    <div class="grid-itemm itemm3">3</div>  
+                </div>
             </div>
-        </div>
-        <div>
-            <div class="grid-container4">
-                <div class="grid-itemm itemm4">4</div>
-                <div class="grid-itemm itemm5">5</div>
-                <div class="grid-itemm itemm6">6</div>  
+            <div>
+                <div class="grid-container4">
+                    <div class="grid-itemm itemm4">4</div>
+                    <div class="grid-itemm itemm5">5</div>
+                    <div class="grid-itemm itemm6">6</div>  
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Penktas -->
-    <div class="grid-container5c inner-paddings">
-        <div class="grid-container5b inner-paddings">
-            <div>
-                <div class="grid-container5">
-                    <div class="grid-itemms itemms1">1</div>
-                    <div class="grid-itemms itemms2">2</div>
-                    <div class="grid-itemms itemms3">3</div>  
-                    <div class="grid-itemms itemms4">4</div>
+    <div class="section" id="penktas"></div>
+        <div class="grid-container5c inner-paddings">
+            <div class="grid-container5b inner-paddings">
+                <div>
+                    <div class="grid-container5">
+                        <div class="grid-itemms itemms1">1</div>
+                        <div class="grid-itemms itemms2">2</div>
+                        <div class="grid-itemms itemms3">3</div>  
+                        <div class="grid-itemms itemms4">4</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="grid-container5">
+                        <div class="grid-itemms itemms5">5</div>
+                        <div class="grid-itemms itemms6">6</div>
+                        <div class="grid-itemms itemms7">7</div>  
+                        <div class="grid-itemms itemms8">8</div>
+                        <div class="grid-itemms itemms9">9</div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div class="grid-container5">
-                    <div class="grid-itemms itemms5">5</div>
-                    <div class="grid-itemms itemms6">6</div>
-                    <div class="grid-itemms itemms7">7</div>  
-                    <div class="grid-itemms itemms8">8</div>
-                    <div class="grid-itemms itemms9">9</div>
-                </div>
-            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footeris">
+        <div class="kaire">
+            Svetaines autorius:
+            <br>
+            Simonas Vytas
+        </div>
+        <div class="desine">
+            <a href="https://www.freepik.com/vectors/background">Background vector created by
+            <br> 
+            starline - www.freepik.com
+            </a>
+        </div>
+        <div class="centras">
+           <div>Filmoteka</div>
+           <div>2021</div>
         </div>
     </div>
     

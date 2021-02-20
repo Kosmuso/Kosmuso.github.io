@@ -1,0 +1,197 @@
+/*----------------------------------------------------- Common TYPE selectors */
+body {
+    background-color: rgb(51,51,51)!important;
+}
+
+
+
+/*--------------------------- Common Abstract classes for specific parameters */
+
+
+.display-inline-block {
+    display: inline-block;
+}
+
+/* ----------------------------------Specific styles for specific sublcasses */
+/* Main top navigation bar styles */
+.navbar {
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+}
+
+@media only screen and (max-width: 768px) {
+    li.bruksniukas a {
+        display: none;
+    }
+}
+
+.active a{
+    color:#00998d!important;
+}
+
+.bruksniukas a:hover {
+    background-color: #222!important;
+    color: #9d9d9d!important;
+}
+
+.nav.navbar-nav li.skaicius {
+    display: inline-block!important;
+}
+
+
+/* Style for all sections or other repeating objects*/
+.section-divs div {
+}
+
+.section {
+    padding-top: 50px;
+    min-height: 100vh;
+    line-height: 200%;
+
+}
+
+.section h2 {
+    color: #F5ED82;
+}
+
+.section h3 {
+    color: #d6d076ce;
+}
+
+.kontaktu-flexbox {
+    display: flex;
+    margin-top: 20px;
+}
+
+.kontaktu-tipai, .patys-kontaktai {
+    flex-basis: 50%;
+
+}
+
+.kontaktu-tipai {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.patys-kontaktai {
+    text-align: left;
+}
+
+
+
+/*----------------- Section 1 styles----------------- */
+.main-flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(51,51,51);
+}
+
+.main-logo-div img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.main-logo-div {
+    width: 40%;
+}
+
+.main-info-div {
+    width: 60%;
+    color: #A17D49;
+    text-align: center;
+}
+
+
+#pirmas {
+    background-color: rgb(51,51,51);
+}
+
+
+/*----------------- Section 2 styles----------------- */
+.warehouse-flex-container {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 95vh;
+}
+
+.navbar.warehouse-soninis-navbar {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+}
+
+.inside-soninis-div {
+    width: 100%;
+    text-align: center;
+}
+
+.warehouse-content-div {
+    width: 75%;
+    align-self: center;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#antras {
+    background-color: rgb(51,51,51);
+    color:#A17D49;
+
+}
+
+
+/*---------------Section 3 styles---------*/
+#trecias {
+    background-color: rgba(51, 51, 51, 0.541);
+    background-clip: content-box;
+}
+
+#imoniuKarusele {
+    min-height: 95vh;
+}
+
+
+#imoniuKarusele img {
+    margin:auto;
+    position: relative;
+    width: 30vh;
+    max-height: 30vh;
+    margin-top: 32vh;
+}
+
+
+
+/* section 4 */
+.paslaugos-flexbox {
+    display: flex;
+    color: #A17D49;
+    justify-content: space-around;
+    align-items: center;
+    height: 95vh;
+}
+
+.paslauga-img img {
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
+/*---------------------------------------------------------- Phone styles */
+/*----------------- Section 1 styles----------------- */
+@media only screen and (max-width: 768px) {
+    .main-logo-div {
+        flex-basis: 100%;
+    }
+
+    .main-info-div {
+        flex-basis: 100%;
+    }
+}
