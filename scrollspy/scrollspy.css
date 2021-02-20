@@ -131,12 +131,17 @@ body {
     text-align: center;
 }
 
+.warehouse-soninis-navbar li:hover {
+    background-color: black;
+}
+
 .warehouse-content-div {
     width: 75%;
     align-self: center;
     text-align: center;
     padding-left: 100px;
     padding-right: 100px;
+    display: none;
 }
 
 #antras {
@@ -144,6 +149,18 @@ body {
     color:#A17D49;
 
 }
+
+.warehouse-soninis-navbar li {
+    padding: 5px;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+#Vilnius {
+    display: initial;
+}
+
+
 
 
 /*---------------Section 3 styles---------*/
@@ -174,14 +191,64 @@ body {
     justify-content: space-around;
     align-items: center;
     height: 95vh;
+    position: relative
 }
 
 .paslauga-img img {
     width: 300px;
-    height: 300px;
+    height: 175px;
 }
 
+.paslauga-header {
+    color: #A17D49;
+}
 
+.kainarascio-isjungimo-mygtukas {
+    padding: 12px;
+    background-color: rgba(255, 0, 0, 0.521);
+    position: absolute;
+    top: 120px;
+    right: 30px;
+    display: none;
+}
+
+/* Sekcijos stiliai */
+.section {
+    height: 100vh;
+}
+ 
+.section-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.section-header2 {
+    padding: 12px;
+    position: absolute;
+    top: 35px;
+    left: 0px;
+}
+ 
+/* Mygtuku paslaugu stiliai */
+.paslaugos-pasirinkimas {
+    flex-basis: 20%;
+    height: 20vh;
+}
+ 
+/* Kainarascio stiliai */
+.kainarastis {
+    display: none;
+    color: black;
+   /* align-self: stretch;*/
+}
+ 
+
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border-top: 1px solid black;
+}
 
 
 /*---------------------------------------------------------- Phone styles */

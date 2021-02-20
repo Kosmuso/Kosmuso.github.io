@@ -42,7 +42,7 @@
                 <!-- Desinysis navigation bar'as -->              
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="vip.html"> VIP</a></li>
-                    <li><a href="reg/index.html"><span class="glyphicon glyphicon-user"></span></a></li>
+                    <li><a href="../reg/index.html"><span class="glyphicon glyphicon-user"></span></a></li>
                     <li><a href="prisijungimas.html"><span class="glyphicon glyphicon-log-in"></span></a></li>                    
                 </ul>
                 <!-- Centrinis navigation bar'as -->
@@ -96,15 +96,15 @@
                     <div class="navbar navbar-inverse warehouse-soninis-navbar">
                         <div class="inside-soninis-div">
                             <ul class="nav flex-column">
-                            <li><a href="">Vilnius</a> </li>
-                            <li><a href="">Kaunas</a> </li>
-                            <li><a href="">Klaipėda</a> </li>
-                            <li><a href="">Varšuva</a> </li> 
+                                <li class="menu-btn" onclick="perjungtiTaba('Vilnius')">Vilnius</li>
+                                <li class="menu-btn" onclick="perjungtiTaba('Kaunas')">Kaunas</li>
+                                <li class="menu-btn" onclick="perjungtiTaba('Klaipeda')">Klaipeda</li>
+                                <li class="menu-btn" onclick="perjungtiTaba('Varsuva')">Varsuva</li> 
                             </ul>
                         </div>
 
                     </div>
-                    <div class="warehouse-content-div">
+                    <div class="warehouse-content-div" id="Vilnius">
                         <h3>Vilnius</h3>
                         <p>Vilniaus sandėlys specializuojasi YYYY_XXXX, taip pat ir ZZZZ_CCCC. Norėdami gauti geriausią aptarnavimą RRRR šalyje bei KKKKK srityje - jūs privalote rinktis mūsų Vilniaus padalinį.</p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui voluptates exercitationem obcaecati aliquam necessitatibus neque quibusdam, dolor, laboriosam excepturi tempora illum. Eum rerum a excepturi labore voluptas accusamus molestiae quos.</p>
@@ -112,9 +112,37 @@
                         <h4>Vilniaus padalinio kontaktai:</h4>
                         <p>E-mail: vilnius-info@logostikos-imone.lt</p>
                         <p>Telefonu: 86 86 86 7777</p>
-                        <p>Adresu:<br> 3B Sandėlių g.,<br> Vilnius,<br> Lietuva</p>
-
-                        
+                        <p>Adresu:<br> 3B Sandėlių g.,<br> Vilnius,<br> Lietuva</p>      
+                    </div>
+                    <div class="warehouse-content-div" id="Kaunas">
+                        <h3>Kaunas</h3>
+                        <p>Kauno sandėlys specializuojasi YYYY_XXXX, taip pat ir ZZZZ_CCCC. Norėdami gauti geriausią aptarnavimą RRRR šalyje bei KKKKK srityje - jūs privalote rinktis mūsų Vilniaus padalinį.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui voluptates exercitationem obcaecati aliquam necessitatibus neque quibusdam, dolor, laboriosam excepturi tempora illum. Eum rerum a excepturi labore voluptas accusamus molestiae quos.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores omnis ipsam praesentium explicabo pariatur, facere dignissimos doloribus aspernatur repudiandae earum ratione, facilis voluptatum consequuntur velit reprehenderit laborum cupiditate perspiciatis.</p>
+                        <h4>Kauno padalinio kontaktai:</h4>
+                        <p>E-mail: kaunas-info@logostikos-imone.lt</p>
+                        <p>Telefonu: 86 86 86 7777</p>
+                        <p>Adresu:<br> 3B Sandėlių g.,<br> Kaunas,<br> Lietuva</p>      
+                    </div>
+                    <div class="warehouse-content-div" id="Klaipeda">
+                        <h3>Klaipeda</h3>
+                        <p>Klaipedos sandėlys specializuojasi YYYY_XXXX, taip pat ir ZZZZ_CCCC. Norėdami gauti geriausią aptarnavimą RRRR šalyje bei KKKKK srityje - jūs privalote rinktis mūsų Vilniaus padalinį.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui voluptates exercitationem obcaecati aliquam necessitatibus neque quibusdam, dolor, laboriosam excepturi tempora illum. Eum rerum a excepturi labore voluptas accusamus molestiae quos.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores omnis ipsam praesentium explicabo pariatur, facere dignissimos doloribus aspernatur repudiandae earum ratione, facilis voluptatum consequuntur velit reprehenderit laborum cupiditate perspiciatis.</p>
+                        <h4>Klaipedos padalinio kontaktai:</h4>
+                        <p>E-mail: klaipeda-info@logostikos-imone.lt</p>
+                        <p>Telefonu: 86 86 86 7777</p>
+                        <p>Adresu:<br> 3B Sandėlių g.,<br> Klaipeda,<br> Lietuva</p>      
+                    </div>
+                    <div class="warehouse-content-div" id="Varsuva">
+                        <h3>Varsuva</h3>
+                        <p>Varsuvos sandėlys specializuojasi YYYY_XXXX, taip pat ir ZZZZ_CCCC. Norėdami gauti geriausią aptarnavimą RRRR šalyje bei KKKKK srityje - jūs privalote rinktis mūsų Vilniaus padalinį.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui voluptates exercitationem obcaecati aliquam necessitatibus neque quibusdam, dolor, laboriosam excepturi tempora illum. Eum rerum a excepturi labore voluptas accusamus molestiae quos.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores omnis ipsam praesentium explicabo pariatur, facere dignissimos doloribus aspernatur repudiandae earum ratione, facilis voluptatum consequuntur velit reprehenderit laborum cupiditate perspiciatis.</p>
+                        <h4>Varsuvos padalinio kontaktai:</h4>
+                        <p>E-mail: varsuva-info@logostikos-imone.lt</p>
+                        <p>Telefonu: 86 86 86 7777</p>
+                        <p>Adresu:<br> 3B Sandėlių g.,<br> Varsuva,<br> Lietuva</p>      
                     </div>
 
                 </div>
@@ -164,42 +192,93 @@
 
                 </div>
             </div>
-
-            <div class="section" id="ketvirtas">
-                <div class="section-header">
-                    Paslaugos
+            <!-- Ketvirtas section -->
+            <div class="section section-flex" id="ketvirtas">
+                <span onclick="isjungtiKainarasti()" id="kainarascio-isjungimo-mygtukas" class="kainarascio-isjungimo-mygtukas">
+                    X
+                </span>
+                <div class="kainarastis" id="pirmas-kainarastis">
+                    <table class="table">
+                        <tr>
+                            <th>Paslauga</th>
+                            <th>Kaina</th>
+                            <th>Kaina turint narystę</th>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 1</td>
+                            <td>119.99</td>
+                            <td>99.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 2</td>
+                            <td>119.99</td>
+                            <td>99.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 3</td>
+                            <td>119.99</td>
+                            <td>99.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 4</td>
+                            <td>119.99</td>
+                            <td>99.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 5</td>
+                            <td>119.99</td>
+                            <td>99.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 6</td>
+                            <td>119.99</td>
+                            <td>99.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 7</td>
+                            <td>119.99</td>
+                            <td>99.99</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="paslaugos-flexbox">
-                    <div class="paslauga-item">
-                        <div class="paslauga-header">
-                            <h4>Vandeniu</h4>
-                        </div>
-                        <div class="paslauga-img">
-                            <img src="../img/scrollspy/paslaugos_img/ship.png" alt="">
-                        </div>
-                    </div>
+                <div class="kainarastis" id="antras-kainarastis">
+                    Antras kainarastis
+                </div>
+                <div class="kainarastis" id="trecias-kainarastis">
+                    Trecias kainarastis
+                </div>
 
-                    <div class="paslauga-item">
-                        <div class="paslauga-header">
-                            <h4>Sausumos keliais</h4>
-                        </div>
-                        <div class="paslauga-img">
-                            <img src="../img/scrollspy/paslaugos_img/van.png" alt="">
-                        </div>
+                <span class="paslaugos-pasirinkimas section-header2">
+                    <h2>Mūsų paslaugos</h2>
+                </span>
+         
+                <div onclick="ijungtiKainarasti('pirmas-kainarastis')" class="paslaugos-pasirinkimas">
+                    <div class="paslauga-header">
+                        <h4>Vandeniu</h4>
                     </div>
+                    <div class="paslauga-img">
+                        <img src="../img/scrollspy/paslaugos_img/ship.png" alt="">
+                    </div>
+                </div>
 
-                    <div class="paslauga-item">
-                        <div class="paslauga-header">
-                            <h4>Oru</h4>
-                        </div>
-                        <div class="paslauga-img">
-                            <img src="../img/scrollspy/paslaugos_img/plane.jpg" alt="">
-                        </div>
+                <div onclick="ijungtiKainarasti('antras-kainarastis')" class="paslaugos-pasirinkimas">
+                    <div class="paslauga-header">
+                        <h4>Sausumos keliais</h4>
+                    </div>
+                    <div class="paslauga-img">
+                        <img src="../img/scrollspy/paslaugos_img/van.png" alt="">
+                    </div>
+                </div>
+
+                <div onclick="ijungtiKainarasti('trecias-kainarastis')" class="paslaugos-pasirinkimas">
+                    <div class="paslauga-header">
+                        <h4>Oru</h4>
+                    </div>
+                    <div class="paslauga-img">
+                        <img src="../img/scrollspy/paslaugos_img/plane.jpg" alt="">
                     </div>
                 </div>
             </div>
-
-
 
         </div>
 

@@ -68,6 +68,7 @@ body div {
     grid-gap: 10px;
     background-color: #2196F3;
     padding: 10px;
+    height: 60vh;
     
 }
   
@@ -84,12 +85,10 @@ body div {
   
 .item2 {
     grid-column: 1 / 4;
-    height: 40vh;
 }
   
 .item3 {
     grid-column: 4 / 7;
-    height: 40vh;
 }
 
 /* Trecias */
@@ -99,6 +98,7 @@ body div {
     grid-gap: 10px;
     background-color: #c95757;
     padding: 10px;
+    height: 60vh;
 }
   
 .grid-itemas {
@@ -149,7 +149,7 @@ body div {
 }
 
 .inner-padding {
-      padding: 50px;
+      padding: auto;
 } 
   
 .grid-itemm {
@@ -203,7 +203,7 @@ body div {
     grid-gap: 10px;
     background-color: #95aabb;
     padding: 10px;
-    height: 80vh;
+    height: 60vh;
 }
 
 .grid-container5c {
@@ -212,11 +212,11 @@ body div {
     grid-gap: 10px;
     background-color: #fffd99;
     padding: 10px;
-    height: 90vh;
+    height: auto;
 }
 
 .inner-paddings {
-      padding: 50px;
+      padding: 25px;
 } 
   
 .grid-itemms {
