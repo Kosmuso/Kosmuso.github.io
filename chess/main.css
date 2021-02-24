@@ -1,0 +1,90 @@
+
+
+.flex-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    align-items: stretch;
+}
+
+.flex-container > div
+{
+    
+    border: 1px solid black;
+    flex: 1 0 12.5%;
+    height: 10vh;
+}
+
+.sonines-raides
+{
+    width: 5%;
+    float: left;
+}
+
+.sonines-raides li
+{
+    height: 10vh;
+    line-height: 10vh;
+    list-style-type: none;
+}
+
+.virsutiniai-skaiciai
+{
+    height: 5vh;
+    margin-left: 5%;
+    width: 95%;
+}
+
+.virsutiniai-skaiciai ul
+{        
+    display: flex;
+    align-items: stretch;
+    width: 95%;
+    list-style-type: none;
+    padding-inline-start: 0px;
+
+}
+
+.virsutiniai-skaiciai li
+{
+    width: 12.5%;
+    text-align: center;
+}
+
+.didesnis-sriftas
+{
+    font-size: 26px;
+}
+
+.flex-container div:nth-child(-2n+8),
+.flex-container div:nth-child(8) ~ div:nth-child(-2n+15), 
+.flex-container div:nth-child(16) ~ div:nth-child(-2n+24),
+.flex-container div:nth-child(24) ~ div:nth-child(-2n+31),
+.flex-container div:nth-child(32) ~ div:nth-child(-2n+40),
+.flex-container div:nth-child(40) ~ div:nth-child(-2n+47),
+.flex-container div:nth-child(48) ~ div:nth-child(-2n+56),
+.flex-container div:nth-child(56) ~ div:nth-child(-2n+63)
+{
+    background-color: #000;
+}
+
+.flex-container div:nth-child(-2n+9),
+.flex-container div:nth-child(9) ~ div:nth-child(-2n+16), 
+.flex-container div:nth-child(16) ~ div:nth-child(-2n+23),
+.flex-container div:nth-child(24) ~ div:nth-child(-2n+32),
+.flex-container div:nth-child(32) ~ div:nth-child(-2n+39),
+.flex-container div:nth-child(40) ~ div:nth-child(-2n+48),
+.flex-container div:nth-child(48) ~ div:nth-child(-2n+55),
+.flex-container div:nth-child(56) ~ div:nth-child(-2n+64)
+{
+    background-color: white;
+}
+
+.footeris {
+    margin-top: 50px;
+}
+
+input {
+    margin-left: 50px;
+}
