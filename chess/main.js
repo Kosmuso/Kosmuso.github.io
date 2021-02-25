@@ -1,9 +1,10 @@
 
 var langeliai = document.querySelectorAll(".flex-container div");
 var mygtukas = document.getElementById("mygtukas");
+var figuruMygtukas = document.getElementById("figuros");
 var tekstoLaukelis = document.getElementById("pasirinktas-langelis");
-console.log(langeliai);
 
+figuruMygtukas.addEventListener("click", pestininkoFiguros(langeliai));
 mygtukas.addEventListener("click", paspaudusMygtukui(tekstoLaukelis, langeliai));
 
 for (let i = 0; i < langeliai.length; i++)
@@ -22,9 +23,6 @@ function paspaudusLangeli(index)
         liekana++;
         var langelis = skaiciaiRaidem[sveikaDalis] + liekana;
         isvestiSpan.innerHTML = langelis.toUpperCase();
-
-
-
     }
 }
 
@@ -37,12 +35,16 @@ function paspaudusMygtukui(tekstoLaukelis, langeliai)
         var raide = ivestasLangelis[0].toLowerCase();
         var skaicius = parseInt(ivestasLangelis[1]);
         var paverstasSkaicius = (raidesSkaiciais[raide] * 8) + skaicius;
-        
-        console.log(paverstasSkaicius);
-        console.log(raide + "   " + skaicius);
 
         langeliai[paverstasSkaicius - 1].style.backgroundColor = "green";
     }
 }
 
+function pestininkoFiguros()
+{
+    return function()
+    {
+        $(".flex-container div#pestininkas").prepend('<img id="theImg" src="img/pawn.png" width=75 height=75 />')
+    }
+}
 

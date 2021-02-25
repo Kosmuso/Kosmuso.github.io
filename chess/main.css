@@ -9,6 +9,11 @@
    
 }
 
+#pestininkas
+{   
+    padding-left: 5px;
+    padding-top: 5px;
+}
 .flex-container > div
 {
     
@@ -83,6 +88,17 @@
 .flex-container div:nth-child(56) ~ div:nth-child(-2n+64)
 {
     background-color: white;
+}
+
+...flex-container div::before {
+    content: "•"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: blue; /* Or a color you prefer */
+  }
+
+#figuros {
+    margin-left: 100px;
+    
 }
 
 .footeris {
