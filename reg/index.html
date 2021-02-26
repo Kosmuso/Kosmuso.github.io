@@ -43,7 +43,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="vip.html"> VIP</a></li>
                         <li><a href="index.html"><span class="glyphicon glyphicon-user"></span></a></li>
-                        <li><a href="prisijungimas.html"><span class="glyphicon glyphicon-log-in"></span></a></li>
+                        <li><a href="../login/index.html"><span class="glyphicon glyphicon-log-in"></span></a></li>
                         
                     </ul>            
                 </div>    
@@ -76,28 +76,27 @@
             </div>
         </div>
 
-        <form name="reg-forma" id="reg-forma" method="POST" action="">
-            <label for="megstamiausia-spalva">Megstamiausia spalva:</label>
-            <input type="color" name="megstamiausia-spalva" id="megstamiausia-spalva">
+        <form name="reg-forma" id="reg-forma" method="POST" action="db_reg_forma.php">
+            
+            <label for="name">Jusu  prisijungimo vardas:</label>
+            <input type="text" name="name" id="name">
 
-            <label for="vardas">Jusu vardas:</label>
-            <input type="text" name="vardas" id="vardas">
+            <label for="password">Jusu prisijungimo slaptazodis:</label>
+            <input type="text" name="password" id="password">
 
-            <label for="pavarde">Jusu pavarde:</label>
-            <input type="text" name="pavarde" id="pavarde">
+            <label for="email">Jusu elektroninis pastas:</label>
+            <input type="email" name="email" id="email">
 
-            <label for="emailas">Jusu elektroninis pastas:</label>
-            <input type="email" name="emailas" id="emailas" value="pavizdys@pavizdys.lt" >
-
-            <label for="gimdata">Jusu gimimo data:</label>
-            <input type="date" name="gimdata" id="gimdata">
-
-            <input type="submit">
+            <input type="submit" value=Patvirtinti>
         </form>
 
+        <div id="i_prisijungimas">Jau esate prisiregistraves ? <a href=http://localhost/saitas/login/index.html> Prisijungti >></a> </div>
+
+        <!-- 
         <button onclick="paspaudusTest()" id="testbtn">
             Spausti cia - isvesti i console.
-        </button>
+        </button> 
+        -->
 
         </div>
         <div class="tuscias"></div>

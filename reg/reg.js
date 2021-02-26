@@ -6,7 +6,7 @@ window.onload = function ()
 
     //var regforma = document.getElementById("reg-forma"); //pagal id
     var regForma = document.forms["reg-forma"]; //pagal name ir id
-    var vardoLaukas = regForma.vardas;
+    var vardoLaukas = regForma.name;
     var vardoLaukotekstas = vardoLaukas.value;
 
     console.log(vardoLaukotekstas);
@@ -20,11 +20,11 @@ function paspaudusTest()
     {
         var regForma = document.forms["reg-forma"];
 
-        var vardoLaukas = regForma.vardas;
+        var vardoLaukas = regForma.name;
         var vardoLaukoTekstas = vardoLaukas.value;
 
-        var pavardesLaukas = regForma.pavarde;
-        var pavardesLaukoTekstas = pavardesLaukas.value;
+        var passwordLaukas = regForma.password;
+        var passwordLaukoTekstas = passwordLaukas.value;
 
 
         var esamasUN = "Vardas";
@@ -35,11 +35,11 @@ function paspaudusTest()
             alert("toks vartotojas jau yra")
         }
 
-        if ( pavardesLaukoTekstas == "")
+        if ( passwordLaukoTekstas == "")
         {
             alert("turit ivesti Pavarde")
         }
 
         console.log("Vardas: " + vardoLaukoTekstas);
-        console.log("Pavarde: " + pavardesLaukoTekstas);
+        console.log("Pavarde: " + passwordLaukoTekstas);
     }
