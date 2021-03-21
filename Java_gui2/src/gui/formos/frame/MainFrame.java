@@ -25,7 +25,6 @@ public class MainFrame
         mainFrame.add(loginPanele);
 
         menuPanele = new MenuPanele();
-        menuPanele.nustatytiPanele();
 
         loginPanele.setMenuPanele(menuPanele);
 
